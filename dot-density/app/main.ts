@@ -15,7 +15,7 @@ import { generateChartPopupTemplate } from "./ArcadeExpressions";
     legendOptions: {
       // Legend will display
       // 1 Dot = 1 House
-      unit: "·¢²¡ÂÊ"
+      unit: "å‘ç—…ç‡"
     },
     attributes: [
       {
@@ -130,7 +130,7 @@ import { generateChartPopupTemplate } from "./ArcadeExpressions";
 
   await view.when();
   const legendContainer = document.getElementById("legendDiv");
-  const legend = new Legend({ view, container: legendContainer ,label:'¸÷Äê·¢²¡ÂÊ' });
+  const legend = new Legend({ view, container: legendContainer ,label:'å„å¹´å‘ç—…ç‡' });
   view.ui.add(document.getElementById("controlDiv"), "bottom-left");
   view.ui.add("yearDiv", "top-right");
   //view.ui.add(new Expand({
