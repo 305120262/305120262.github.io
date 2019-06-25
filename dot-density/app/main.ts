@@ -130,7 +130,7 @@ import { generateChartPopupTemplate } from "./ArcadeExpressions";
 
   await view.when();
   const legendContainer = document.getElementById("legendDiv");
-  const legend = new Legend({ view, container: legendContainer });
+  const legend = new Legend({ view, container: legendContainer ,label:'各年发病率' });
   view.ui.add(document.getElementById("controlDiv"), "bottom-left");
   view.ui.add("yearDiv", "top-right");
   //view.ui.add(new Expand({

@@ -251,7 +251,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/Fea
                 case 1:
                     _a.sent();
                     legendContainer = document.getElementById("legendDiv");
-                    legend = new Legend({ view: view, container: legendContainer });
+                    legend = new Legend({ view: view, container: legendContainer, label: '���귢����' });
                     view.ui.add(document.getElementById("controlDiv"), "bottom-left");
                     view.ui.add("yearDiv", "top-right");
                     playBtn = document.getElementById("playBtn");
