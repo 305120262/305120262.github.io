@@ -15,7 +15,7 @@ import { generateChartPopupTemplate } from "./ArcadeExpressions";
     legendOptions: {
       // Legend will display
       // 1 Dot = 1 House
-      unit: "House"
+      unit: "·¢²¡ÂÊ"
     },
     attributes: [
       {
@@ -133,15 +133,15 @@ import { generateChartPopupTemplate } from "./ArcadeExpressions";
   const legend = new Legend({ view, container: legendContainer });
   view.ui.add(document.getElementById("controlDiv"), "bottom-left");
   view.ui.add("yearDiv", "top-right");
-  view.ui.add(new Expand({
-    group: "top-left",
-    view,
-    content: new Search({ 
-      view,
-      resultGraphicEnabled: false,
-      popupEnabled: false 
-    })
-  }), "top-left");
+  //view.ui.add(new Expand({
+  //  group: "top-left",
+  //  view,
+  //  content: new Search({ 
+  //    view,
+  //    resultGraphicEnabled: false,
+  //    popupEnabled: false 
+  //  })
+  //}), "top-left");
 
   const playBtn = document.getElementById("playBtn") as HTMLDivElement;
   playBtn.addEventListener("click", () => {

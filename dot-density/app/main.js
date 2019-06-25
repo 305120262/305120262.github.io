@@ -33,7 +33,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/renderers/DotDensityRenderer", "esri/widgets/Legend", "esri/widgets/Search", "esri/widgets/Expand", "./ArcadeExpressions"], function (require, exports, EsriMap, MapView, FeatureLayer, DotDensityRenderer, Legend, Search, Expand, ArcadeExpressions_1) {
+define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/renderers/DotDensityRenderer", "esri/widgets/Legend", "./ArcadeExpressions"], function (require, exports, EsriMap, MapView, FeatureLayer, DotDensityRenderer, Legend, ArcadeExpressions_1) {
     "use strict";
     var _this = this;
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -157,7 +157,7 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/Fea
                         legendOptions: {
                             // Legend will display
                             // 1 Dot = 1 House
-                            unit: "House"
+                            unit: "������"
                         },
                         attributes: [
                             {
@@ -254,15 +254,6 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/Fea
                     legend = new Legend({ view: view, container: legendContainer });
                     view.ui.add(document.getElementById("controlDiv"), "bottom-left");
                     view.ui.add("yearDiv", "top-right");
-                    view.ui.add(new Expand({
-                        group: "top-left",
-                        view: view,
-                        content: new Search({
-                            view: view,
-                            resultGraphicEnabled: false,
-                            popupEnabled: false
-                        })
-                    }), "top-left");
                     playBtn = document.getElementById("playBtn");
                     playBtn.addEventListener("click", function () {
                         hideAttributes(layer.renderer);
